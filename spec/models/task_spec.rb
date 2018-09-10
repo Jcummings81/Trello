@@ -1,5 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Task, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'attributes' do
+
+    it 'Exists' do
+      bd = FactoryBot.create(:board)
+      expect(bd.exists).to eq(true)
+    end
+
+  end
 end

@@ -1,5 +1,6 @@
 FactoryBot.define do
-  factory :list do
-    name { "MyString" }
+  factory :list, class: List do
+    name { "This Week" }
+    board
   end
 end

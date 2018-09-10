@@ -1,5 +1,6 @@
 FactoryBot.define do
-  factory :task do
-    name { "MyString" }
+  factory :task, class: Task do
+    name { "kill bill" }
+    list
   end
 end

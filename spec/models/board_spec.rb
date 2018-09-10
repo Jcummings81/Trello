@@ -4,8 +4,9 @@ RSpec.describe Board, type: :model do
   describe 'attributes' do
 
     it 'Exists' do
-      expect(FactoryBot.create(:board).exists).to eq(true) 
-     end
-      
+      bd = FactoryBot.create(:board)
+      expect(bd.exists).to eq(true)
     end
+
   end
+end
