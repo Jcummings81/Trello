@@ -3,7 +3,10 @@
 <p><%= @task.name %></p>
 <br />
 <%= link_to 'Edit Task', edit_list_task_path( @list, @task) %>
+<br />
 <%= link_to 'Delete Task', [@list, @task], method: :delete %>
-<%= link_to 'Back To Lists', list_tasks_path(@list) %>
+<br />
+<%= link_to 'Back To Tasks', list_tasks_path(@list) %>
+
 
 
