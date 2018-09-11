@@ -3,5 +3,8 @@ Rails.application.routes.draw do
     resources :lists
   end
 
-  resources :tasks, module: 'list'
+  scope "lists/:list_id", as: "list" do
+    resources :tasks
+  end
+
 end
