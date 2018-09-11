@@ -1,0 +1,10 @@
+<h1>Click on a List To Interact With Tasks</h1>
+<%= link_to 'Create a new List', new_board_list_path(@board) %>
+<%= link_to 'Back to Boards', boards_path %>
+
+<ul>
+  <% @lists.each do |ls| %>
+    <li><%= link_to ls.name, [@board, ls] %></li>
+  <% end %>
+</ul>
+

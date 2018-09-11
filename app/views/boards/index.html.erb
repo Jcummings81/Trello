@@ -1,0 +1,7 @@
+<h1>Click on a Board To Interact With Lists</h1>
+<%= link_to 'Create a new Board', new_board_path %>
+<ul>
+  <% @boards.each do |brd| %>
+    <li><%= link_to brd.name, brd %></li>
+  <% end %>
+</ul>
